@@ -29,6 +29,8 @@ h1 {
     font-weight: 700;
     font-style: normal;
     font-size: 3.7rem;
+    color: var(--color-cremita);
+    margin: 5px 0px;
 }
 
 h2 {
@@ -36,6 +38,7 @@ h2 {
     font-weight: 500;
     font-style: normal;
     font-size: 1.5rem;
+    color: var(--color-cremita);
 }
 
 h3 {
@@ -184,3 +187,20 @@ footer {
 }
 
 /*---FIN DE FOOTER---*/
+
+/*---INDEX---*/
+
+#inicio {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("img/desktop/cerro-index.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
