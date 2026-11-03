@@ -41,6 +41,15 @@ h2 {
     color: var(--color-cremita);
 }
 
+.tipoH1 {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.7rem;
+    color: var(--color-cremita);
+    margin: 5px 0px;
+}
+
 h3 {
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 700;
@@ -225,3 +234,47 @@ footer {
 
 
 /*---DESCUBRI FIN---*/
+
+
+
+
+
+/*---PLANIFICA TU VISITA INICIO*/
+
+#planifica {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("img/desktop/planificatuvisitabanner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---PLANIFICA TU VISITA FIN---*/
+
+
+
+
+
+/*---CONTACTO INICIO---*/
+#contacto {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("img/desktop/contactobanner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*---CONTACTO FIN---*/
