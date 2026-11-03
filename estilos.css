@@ -204,3 +204,24 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+
+
+/*---DESCUBRI INICIO---*/
+#descubri {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("img/desktop/bannerdescubri.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*---DESCUBRI FIN---*/
