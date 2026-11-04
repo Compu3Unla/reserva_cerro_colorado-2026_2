@@ -277,4 +277,72 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+#conoce {
+    color: var(--color-verde);
+    display: flex;
+    padding: 0 344px 41px 344px;
+    gap: 100px;
+
+}
+
+.recomendacion {
+    width: 608px;
+    height: 301px;
+    padding: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+#formulario {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: var(--color-cremita);
+
+    background-image: url("img/desktop/section_formulario.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 675px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.completar-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.opcion-unica {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.mensaje {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 /*---CONTACTO FIN---*/
