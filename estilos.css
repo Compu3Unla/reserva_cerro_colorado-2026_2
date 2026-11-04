@@ -214,12 +214,210 @@ footer {
     align-items: center;
 }
 
+.flecha {
+    margin-top: 60px;
+}
+
+/*por que visitar*/
+
+#porquevisitar {
+    margin-bottom: 80px;
+}
+
+h3,
+h4 {
+    color: var(--color-verde);
+    margin: 10px 0;
+    text-align: center;
+}
+
+.tarjetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 20px;
+    max-width: 1372px;
+    margin: 0 auto;
+}
+
+/*contenedor de tarjetas*/
+
+.tarjeta1,
+.tarjeta2,
+.tarjeta3,
+.tarjeta4 {
+    width: 330px;
+    height: 447px;
+    flex-shrink: 0;
+    perspective: 1000px;
+}
+
+/*todo lo que gira*/
+
+.tarjeta-contenido {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s ease;
+    transform-style: preserve-3d;
+}
+
+/*para que giren*/
+
+.tarjeta1:hover .tarjeta-contenido,
+.tarjeta2:hover .tarjeta-contenido,
+.tarjeta3:hover .tarjeta-contenido,
+.tarjeta4:hover .tarjeta-contenido {
+    transform: rotateY(180deg);
+}
+
+/*frente y dorso*/
+
+.frente,
+.dorso {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: var(--color-bordo);
+    border-radius: 26px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.20);
+}
+
+/*frente tarjetas*/
+
+.frente figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.frente img {
+    width: 100%;
+    min-height: 0;
+    object-fit: cover;
+}
+
+.frente figcaption {
+    height: 132px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 2.1rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-cremita);
+}
+
+
+/*dorso tajetas*/
+
+.dorso {
+    transform: rotateY(180deg);
+}
+
+.dorso figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.dorso img {
+    width: 100%;
+    min-height: 0;
+    object-fit: cover;
+}
+
+.dorso figcaption {
+    position: static;
+    width: 100%;
+    height: 300px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 35px;
+    box-sizing: border-box;
+    background: var(--color-bordo);
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.35;
+    text-align: left;
+    color: var(--color-cremita);
+}
+
+/*patrimonio*/
+
+#patrimonio {
+    max-width: 1920px;
+    min-height: 911px;
+    background-image: url("img/desktop/fondo-patrimonio.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-patrimonio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    min-width: 1135px;
+    min-height: 673px;
+}
+
+.texto-patrimonio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 732px;
+    max-height: 563px;
+}
+
+.texto-patrimonio h3,
+p,
+h4 {
+    color: var(--color-cremita);
+    margin: 20px 0px 5px 0px;
+}
+
+.texto-patrimonio ul,
+li {
+    color: var(--color-cremita);
+    font-size: 1.1rem;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.texto-patrimonio img {
+    border-radius: 20px;
+}
+
+
 
 
 /*---DESCUBRI INICIO---*/
 #descubri {
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
 
     background-image: url("img/desktop/bannerdescubri.jpg");
     background-size: cover;
@@ -232,6 +430,166 @@ footer {
     align-items: center;
 }
 
+.h3-conoce {
+    color: var(--color-verde);
+    margin: 0px;
+}
+
+.p-conoce {
+    color: var(--color-verde);
+    margin: 0px;
+}
+
+#conoce-descubri {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto 70px auto;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+.conoce-izq {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 500px;
+    gap: 38px;
+
+    /*---linea naranja---*/
+    padding-bottom: 25px;
+    border-bottom: 2px solid var(--color-naranja);
+}
+
+#conoce-descubri img {
+    border-radius: 26px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.40);
+}
+
+#explora-su-historia {
+    width: 100%;
+    min-height: 145vh;
+
+    background-image: url("img/desktop/fondoarterupestre.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.explora-titulo-subtitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 70px 0 60px 0;
+}
+
+.explora-contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.h2-explora {
+    color: var(--color-bordo);
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.h3-explora {
+    color: var(--color-cremita);
+    margin: 0px;
+    padding-top: 70px;
+    margin-top: 70px;
+}
+
+.p-explora {
+    color: var(--color-cremita);
+    margin: 0px;
+}
+
+.p-explora-2 {
+    color: var(--color-bordo);
+    margin: 0px;
+}
+
+.pueblos-originarios {
+    display: flex;
+    width: 355px;
+    height: 455px;
+    padding: 16px 30px 0px 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+
+    border-radius: 12px;
+    background: var(--color-cremita);
+}
+
+.casa-museo {
+    display: flex;
+    width: 355px;
+    height: 455px;
+    padding: 16px 30px 0px 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+
+    border-radius: 12px;
+    background: var(--color-cremita);
+}
+
+.los-comechingones {
+    display: flex;
+    width: 355px;
+    height: 455px;
+    padding: 16px 30px 0px 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+
+    border-radius: 12px;
+    background: var(--color-cremita);
+}
+
+.pueblos-originarios img {
+    border-radius: 12px;
+}
+
+.casa-museo img {
+    border-radius: 12px;
+}
+
+.los-comechingones img {
+    border-radius: 12px;
+}
+
+#video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+    padding-bottom: 60px;
+}
+
+.h3-video {
+    color: var(--color-bordo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 60px;
+    margin: 0 0px 60px 0;
+}
 
 /*---DESCUBRI FIN---*/
 
@@ -277,4 +635,75 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+#conoce p, h4 {
+    color: var(--color-verde);
+}
+
+#conoce {
+    color: var(--color-verde);
+    display: flex;
+    padding: 0 344px 41px 344px;
+    gap: 100px;
+
+}
+
+.recomendacion {
+    width: 608px;
+    height: 301px;
+    padding: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+#formulario {
+    background-image: url("img/desktop/section_formulario.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 675px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h3-formulario {
+    color: var(--color-cremita);
+}
+
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.completar-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.opcion-unica {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.mensaje {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 /*---CONTACTO FIN---*/
