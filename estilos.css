@@ -1,5 +1,280 @@
 @charset "UTF-8";
 
-h1 {
-    color: #2c3e50;
+:root {
+    --color-cremita: #f6ebd5;
+    --color-verde: #385B39;
+    --color-naranja: #D85D38;
+    --color-bordo: #640F0C;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-cremita);
+
+    a {
+        text-decoration: none;
+        color: var(--color-cremita);
+        font-family: "Alegreya Sans", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.3rem;
+    }
+}
+
+/*---ESTILO DE TEXTO---*/
+
+h1 {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.7rem;
+    color: var(--color-cremita);
+    margin: 5px 0px;
+}
+
+h2 {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: var(--color-cremita);
+}
+
+.tipoH1 {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.7rem;
+    color: var(--color-cremita);
+    margin: 5px 0px;
+}
+
+h3 {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.8rem;
+}
+
+h4 {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.1rem;
+}
+
+h5 {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+h6 {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+}
+
+li {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+ul {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+    padding: 5px 0px;
+    margin: 0;
+}
+
+/*---HEADER---*/
+
+header {
+    background-color: var(--color-bordo);
+    display: flex;
+    max-width: 1920px;
+    height: 87px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+nav {
+    display: flex;
+    max-width: 667px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+
+    a {
+        font-family: "Alegreya Sans", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: var(--color-cremita);
+        border: 10px solid transparent;
+        border-radius: 30px;
+        padding: 0px 20px;
+
+    }
+}
+
+nav a:hover {
+    background-color: var(--color-naranja);
+    color: var(--color-cremita);
+    border-radius: 30px;
+    border: 10px solid var(--color-naranja);
+}
+
+/*---FIN DE HEADER*/
+
+/*---FOOTER---*/
+
+footer {
+    background-color: var(--color-verde);
+    color: var(--color-cremita);
+    padding: 20px;
+    max-width: 1920px;
+    height: 347px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-redes {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.apartados {
+    display: flex;
+    max-width: 554px;
+    max-height: 177px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+
+.descubri,
+.planifica,
+.contacto {
+    display: flex;
+    max-width: 177px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+}
+
+.cordoba {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*---FIN DE FOOTER---*/
+
+/*---INDEX---*/
+
+#inicio {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("img/desktop/cerro-index.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*---DESCUBRI INICIO---*/
+#descubri {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("img/desktop/bannerdescubri.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*---DESCUBRI FIN---*/
+
+
+
+
+
+/*---PLANIFICA TU VISITA INICIO*/
+
+#planifica {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("img/desktop/planificatuvisitabanner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---PLANIFICA TU VISITA FIN---*/
+
+
+
+
+
+/*---CONTACTO INICIO---*/
+#contacto {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("img/desktop/contactobanner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*---CONTACTO FIN---*/
