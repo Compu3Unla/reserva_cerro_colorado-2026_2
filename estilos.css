@@ -412,7 +412,279 @@ li {
 }
 
 
+.flecha {
+    margin-top: 60px;
+}
 
+/*por que visitar*/
+
+#porquevisitar {
+    margin-bottom: 80px;
+}
+
+h3,
+h4 {
+    color: var(--color-verde);
+    margin: 10px 0;
+    text-align: center;
+}
+
+.tarjetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 20px;
+    max-width: 1372px;
+    margin: 0 auto;
+}
+
+/*contenedor de tarjetas*/
+
+.tarjeta1,
+.tarjeta2,
+.tarjeta3,
+.tarjeta4 {
+    width: 330px;
+    height: 447px;
+    flex-shrink: 0;
+    perspective: 1000px;
+}
+
+/*todo lo que gira*/
+
+.tarjeta-contenido {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s ease;
+    transform-style: preserve-3d;
+}
+
+/*para que giren*/
+
+.tarjeta1:hover .tarjeta-contenido,
+.tarjeta2:hover .tarjeta-contenido,
+.tarjeta3:hover .tarjeta-contenido,
+.tarjeta4:hover .tarjeta-contenido {
+    transform: rotateY(180deg);
+}
+
+/*frente y dorso*/
+
+.frente,
+.dorso {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: var(--color-bordo);
+    border-radius: 26px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.20);
+}
+
+/*frente tarjetas*/
+
+.frente figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.frente img {
+    width: 100%;
+    min-height: 0;
+    object-fit: cover;
+}
+
+.frente figcaption {
+    height: 132px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 2.1rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-cremita);
+}
+
+
+/*dorso tajetas*/
+
+.dorso {
+    transform: rotateY(180deg);
+}
+
+.dorso figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.dorso img {
+    width: 100%;
+    min-height: 0;
+    object-fit: cover;
+}
+
+.dorso figcaption {
+    position: static;
+    width: 100%;
+    height: 300px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 35px;
+    box-sizing: border-box;
+    background: var(--color-bordo);
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.35;
+    text-align: left;
+    color: var(--color-cremita);
+}
+
+/*patrimonio*/
+
+#patrimonio {
+    max-width: 1920px;
+    min-height: 911px;
+    background-image: url("img/desktop/fondo-patrimonio.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-patrimonio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    min-width: 1135px;
+    min-height: 673px;
+}
+
+.texto-patrimonio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 732px;
+    max-height: 563px;
+}
+
+.texto-patrimonio h3,
+p,
+h4 {
+    color: var(--color-cremita);
+    margin: 20px 0px 5px 0px;
+}
+
+.texto-patrimonio ul,
+li {
+    color: var(--color-cremita);
+    font-size: 1.1rem;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.texto-patrimonio img {
+    border-radius: 20px;
+}
+
+
+
+
+/*descubri la historia*/
+
+/* Sección principal */
+#descubri-historia {
+    background-image: url("img/desktop/fondo-descubri-index.png");
+    width: 100%;
+    min-height: 912px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+#descubri-historia h6, h5 {
+    color: var(--color-cremita)
+}
+
+/* Pista horizontal del carrusel */
+.carrusel-track {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
+    padding: 20px;
+}
+
+/* Ocultar barra de scroll en Chrome y Safari */
+.carrusel-track::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estilo de cada tarjeta individual */
+.tarjeta {
+    flex: 0 0 892px;
+    /* Ancho fijo para mantener la medida original */
+    max-width: 90vw;
+    /* Se adapta a pantallas más chicas si es necesario */
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+/* Corrección de visualización de imágenes */
+.tarjeta img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    /* Evita que la imagen se deforme */
+    display: block;
+}
+
+/* Contenedor naranja solapado */
+.contenedor-naranja {
+    position: relative;
+    margin-top: -90px;
+    /* Superpone el contenedor sobre la imagen */
+    z-index: 2;
+    /* Asegura que esté por encima de la foto */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3.125rem;
+    background: linear-gradient(180deg, rgba(216, 93, 56, 0.00) 0%, #D85D38 40.98%);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/*---INDEX FIN---*/
 
 /*---DESCUBRI INICIO---*/
 #descubri {
@@ -636,81 +908,4 @@ li {
     align-items: center;
 }
 
-#conoce p, h4 {
-    color: var(--color-verde);
-}
-
-#conoce {
-    color: var(--color-verde);
-    display: flex;
-    padding: 0 344px 41px 344px;
-    gap: 100px;
-
-}
-
-.recomendacion {
-    width: 608px;
-    height: 301px;
-    padding: 20px;
-}
-
-.info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 30px;
-}
-
-#formulario {
-    background-image: url("img/desktop/section_formulario.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 675px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.h3-formulario {
-    color: var(--color-cremita);
-}
-
-
-form {
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
-}
-
-.completar-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-}
-
-.opcion-unica {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-}
-
-.mensaje {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-label {
-    color: var(--color-cremita);
-    font-family: "Alegreya Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.3rem;
-}
 /*---CONTACTO FIN---*/
