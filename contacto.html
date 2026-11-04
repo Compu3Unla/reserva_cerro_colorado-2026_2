@@ -28,6 +28,83 @@
             <h2 class="tipoH1">Contacto</h2>
             <h2>Te ayudamos a planificar tu visita al detalle</h2>
         </section>
+        <section id="conoce">
+            <div class="recomendacion">
+                <h3>¿Estás pensando en venir a conocer este lugar? </h3>
+                <p>Queremos que disfrutes la experiencia al máximo. Contanos con quiénes vas a venir y si el grupo tiene
+                    alguna necesidad o dificultad de movilidad, para poder recomendarte un recorrido adaptado y pensado
+                    para ustedes.
+                    También podés contarnos si tenes dudas y estaremos encantados de ayudarte.</p>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                <div class="info">
+                    <img src="img/desktop/icono-mail.png" alt="Correo Electrónico" width="60px" height="60px" />
+                    <h4>belen_060@hotmail.com</h4>
+                </div>
+                <div class="info">
+                    <img src="img/desktop/icono-wsp.png" alt="WhatsApp" width="60px" height="60px" />
+                    <h4>+54 11 3344 5566</h4>
+                </div>
+            </div>
+        </section>
+        <section id="formulario">
+            <h3 class="h3-formulario">Formulario de contacto</h3>
+            <form action="enviar.php" method="post">
+
+                <div class="completar-info">
+                    <label for="nombre">Nombre y apellido:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+
+                <div class="opcion-unica">
+                    <h2>Más detalle de la salida:</h2>
+
+                    <label>
+                        Viaje con amigos
+                        <input type="radio" id="amigos" name="salida" value="Viaje con amigos" required>
+                    </label>
+
+                    <label>
+                        Excursión grupal
+                        <input type="radio" id="grupal" name="salida" value="Excursión grupal">
+                    </label>
+
+                    <label>
+                        Salida familiar
+                        <input type="radio" id="familiar" name="salida" value="Salida familiar">
+                    </label>
+
+                    <label>
+                        Viaje de jubilados
+                        <input type="radio" id="jubilados" name="salida" value="Viaje de jubilados">
+                    </label>
+
+                    <label>
+                        Salida escolar
+                        <input type="radio" id="escolar" name="salida" value="Salida escolar">
+                    </label>
+
+                    <label>
+                        Otros
+                        <input type="radio" id="otros" name="salida" value="Otros">
+                    </label>
+                </div>
+
+                <div class="mensaje">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    <button type="submit">Enviar</button>
+                </div>
+
+            </form>
+        </section>
     </main>
     <footer>
         <div class="logo-redes">
