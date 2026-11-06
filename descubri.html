@@ -81,8 +81,24 @@
 
         <section id="video">
             <h3 class="h3-video">Un viaje por Cerro colorado</h3>
-            <video class="video-descubri" src="img/video_descubri.mp4" controls playsinline></video>
+            <div class="video-container">
+                <video class="video-descubri" src="img/video_descubri.mp4" playsinline></video>
 
+                <div class="custom-controls">
+                    <!-- BOTON PLAY / PAUSA  -->
+                    <button id="play-btn" class="btn-ctrl">
+                        <img id="icon-play" src="img/desktop/play.png" alt="Play">
+                        <img id="icon-pause" src="img/desktop/Propiedad 1=pausa.png" alt="Pausa" style="display: none;">
+                    </button>
+
+                    <!-- BOTON SONIDO  -->
+                    <button id="mute-btn" class="btn-ctrl">
+                        <img id="icon-sound-on" src="img/desktop/Propiedad 1=sonido.png" alt="Con sonido">
+                        <img id="icon-sound-off" src="img/desktop/Propiedad 1=mudo.png" alt="Silenciado"
+                            style="display: none;">
+                    </button>
+                </div>
+            </div>
         </section>
 
     </main>
@@ -119,6 +135,40 @@
             <img src="img/desktop/cordoba-logo.png" alt="Cordoba" />
         </div>
     </footer>
+
+    <script>
+        const video = document.querySelector('.video-descubri');
+        const playBtn = document.getElementById('play-btn');
+        const muteBtn = document.getElementById('mute-btn');
+
+        const iconPlay = document.getElementById('icon-play');
+        const iconPause = document.getElementById('icon-pause');
+        const iconSoundOn = document.getElementById('icon-sound-on');
+        const iconSoundOff = document.getElementById('icon-sound-off');
+
+        playBtn.addEventListener('click', () => {
+            if (video.paused) {
+                video.play();
+                iconPlay.style.display = 'none';
+                iconPause.style.display = 'block';
+            } else {
+                video.pause();
+                iconPlay.style.display = 'block';
+                iconPause.style.display = 'none';
+            }
+        });
+
+        muteBtn.addEventListener('click', () => {
+            video.muted = !video.muted;
+            if (video.muted) {
+                iconSoundOn.style.display = 'none';
+                iconSoundOff.style.display = 'block';
+            } else {
+                iconSoundOn.style.display = 'block';
+                iconSoundOff.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 
 </html>

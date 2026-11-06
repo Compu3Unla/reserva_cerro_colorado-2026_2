@@ -591,6 +591,42 @@ li {
     margin: 0 0px 60px 0;
 }
 
+.video-container {
+    position: relative;
+    width: 900px;     
+    max-width: 100%;   
+}
+
+.video-descubri {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 26px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.40);
+}
+
+.custom-controls {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-verde);
+    padding: 15px 40px;
+    border-radius: 26px;
+    display: flex;
+    gap: 35px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.40);
+}
+
+.btn-ctrl {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+}
+
 /*---DESCUBRI FIN---*/
 
 
@@ -631,7 +667,8 @@ li {
     align-items: center;
 }
 
-#conoce p, h4 {
+#conoce p,
+h4 {
     color: var(--color-verde);
 }
 
@@ -708,7 +745,5 @@ label {
     font-style: normal;
     font-size: 1.4rem;
 }
-        
-    font-size: 1.3rem;
-}
+
 /*---CONTACTO FIN---*/
