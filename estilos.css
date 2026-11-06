@@ -224,12 +224,7 @@ footer {
     margin-bottom: 80px;
 }
 
-h3,
-h4 {
-    color: var(--color-verde);
-    margin: 10px 0;
-    text-align: center;
-}
+
 
 .tarjetas {
     display: flex;
@@ -422,12 +417,7 @@ li {
     margin-bottom: 80px;
 }
 
-h3,
-h4 {
-    color: var(--color-verde);
-    margin: 10px 0;
-    text-align: center;
-}
+
 
 .tarjetas {
     display: flex;
@@ -625,7 +615,8 @@ li {
     background-repeat: no-repeat;
 }
 
-#descubri-historia h6, h5 {
+#descubri-historia h6,
+h5 {
     color: var(--color-cremita)
 }
 
@@ -888,9 +879,12 @@ li {
 
 /*---PLANIFICA TU VISITA FIN---*/
 
+
+
+/*---CONTACTO INICIO---*/
 #contacto {
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
 
     background-image: url("img/desktop/contactobanner.jpg");
     background-size: cover;
@@ -903,7 +897,8 @@ li {
     align-items: center;
 }
 
-#conoce p, h4 {
+#conoce p,
+h4 {
     color: var(--color-verde);
 }
 
@@ -918,14 +913,20 @@ li {
 .recomendacion {
     width: 608px;
     height: 301px;
-    padding: 20px;
 }
 
 .info {
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 30px;
+    padding-bottom: 20px;
+}
+
+.separador {
+    width: 2px;
+    height: 350px;
+    background-color: var(--color-naranja);
+    flex-shrink: 0;
 }
 
 #formulario {
@@ -949,7 +950,6 @@ li {
 
 form {
     display: flex;
-    flex-direction: row;
     gap: 100px;
 }
 
@@ -964,7 +964,16 @@ form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 30px;
+    gap: 27px;
+}
+.opcion-unica h2 {
+    margin: 0;
+}
+.opcion-unica label {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
 }
 
 .mensaje {
@@ -973,10 +982,89 @@ form {
     gap: 30px;
 }
 
-label {
+.mensaje textarea {
+    width: 392px;
+    height: 255px;
+    padding: 12px;
+    background-color: var(--color-cremita);
+
+    border-radius: 26px;
+    color: var(--color-verde);
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4rem;
+
+    resize: none;
+}
+
+.completar-info input {
+    width: 412px;
+    height: 50px;
+    border-radius: 26px;
+    background-color: var(--color-cremita);
+
+    color: var(--color-verde);
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4rem;
+    padding-left: 20px;
+}
+
+.mensaje button {
+    width: 161px;
+    height: 58px;
+    border-radius: 26px;
+    background-color: var(--color-naranja);
+
     color: var(--color-cremita);
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.4rem;
+
+}
+
+label {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: var(--color-cremita);
+}
+
+.opcion-unica label {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.opcion-unica input[type="radio"] {
+    appearance: none;
+    width: 34px;
+    height: 34px;
+    border: 2px solid var(--color-cremita);
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.opcion-unica input[type="radio"]:checked {
+    background-color: var(--color-cremita);
+}
+
+.opcion-unica input[type="radio"]:checked::after {
+    content: "✓";
+    color: #800020;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
