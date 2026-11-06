@@ -1023,48 +1023,4 @@ form {
     font-weight: 400;
     font-style: normal;
     font-size: 1.4rem;
-
-}
-
-label {
-    font-family: "Alegreya Sans", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1.5rem;
-    color: var(--color-cremita);
-}
-
-.opcion-unica label {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 30px;
-}
-
-.opcion-unica input[type="radio"] {
-    appearance: none;
-    width: 34px;
-    height: 34px;
-    border: 2px solid var(--color-cremita);
-    border-radius: 50%;
-    background-color: transparent;
-    cursor: pointer;
-    position: relative;
-    flex-shrink: 0;
-}
-
-.opcion-unica input[type="radio"]:checked {
-    background-color: var(--color-cremita);
-}
-
-.opcion-unica input[type="radio"]:checked::after {
-    content: "✓";
-    color: #800020;
-    font-size: 24px;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
