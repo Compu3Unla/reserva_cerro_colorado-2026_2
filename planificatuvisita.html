@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cerro Colorado</title>
     <link rel="stylesheet" href="estilos.css" />
     <link rel="icon" href="img/isotipo.svg" type="image/svg" />
@@ -11,7 +12,7 @@
     </style>
 </head>
 
-<body>
+<body class="pagina-planifica">
     <header>
         <div class="logo">
             <img src="img/logo.svg" alt="Logo de Cerro Colorado" width="220" height="47" />
@@ -26,9 +27,155 @@
     <main>
         <section id="planifica">
             <h2 class="tipoH1">Planificá tu visita</h2>
-            <h2>Actividades, accesos y servicios para vivir Cerro Colorado 
-de manera responsable. </h2>
+            <h2>Actividades, accesos y servicios para vivir Cerro Colorado
+                de manera responsable. </h2>
         </section>
+
+        <section class="planifica-actividades" id="que-hacer">
+            <div class="planifica-contenedor">
+                <h2>¿Qué podés hacer?</h2>
+                <p class="planifica-introduccion">
+                    Cerro Colorado ofrece diferentes propuestas para conocer
+                    su patrimonio cultural y natural.
+                </p>
+
+                <div class="planifica-actividades-grid">
+                    <article class="planifica-actividad">
+                        <img src="img/desktop/arteruprestre4.jpg" alt="Arte rupestre de Cerro Colorado">
+                        <h3>Visitá el Arte<br>Rupestre</h3>
+                    </article>
+
+                    <article class="planifica-actividad">
+                        <img src="img/desktop/senderismoynaturaleza.jpg" alt="Paisajes naturales de Cerro Colorado">
+                        <h3>Senderismo y<br>Naturaleza</h3>
+                    </article>
+
+                    <article class="planifica-actividad">
+                        <img src="img/desktop/museo.jpg" alt="Museo Atahualpa Yupanqui">
+                        <h3>Museo Atahualpa<br>Yupanqui</h3>
+                    </article>
+
+                    <article class="planifica-actividad">
+                        <img src="img/desktop/productos.jpg" alt="Productos regionales de Cerro Colorado">
+                        <h3>Productos<br>Autóctonos</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="planifica-aviso">
+            <div class="planifica-aviso-contenido">
+                <span class="planifica-aviso-icono" aria-hidden="true">!</span>
+
+                <div class="planifica-aviso-texto">
+                    <h2>Antes de visitar</h2>
+                    <p>
+                        Algunos cerros están cerrados al público, mientras que otros
+                        abren con acceso administrado por privados y pueden requerir
+                        una remuneración económica. Ayudanos a cuidar las pictografías
+                        y el patrimonio, respetando las indicaciones y las señalizaciones.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="planifica-llegar" id="como-llegar">
+            <div class="planifica-contenedor planifica-llegar-grid">
+
+                <div class="planifica-llegar-intro">
+                    <h2>Cómo llegar</h2>
+                    <p>
+                        Desde la Ruta Nacional 9 hasta la localidad de Santa Elena,
+                        luego por la Ruta 21 hacia el oeste.
+                    </p>
+                    <p>
+                        La localidad cuenta con una pequeña terminal que recibe
+                        turistas de distintos puntos del país.
+                    </p>
+
+                    <a class="planifica-boton-mapa"
+                        href="https://www.google.com/maps/search/?api=1&amp;query=Cerro+Colorado+Cordoba+Argentina"
+                        target="_blank" rel="noopener noreferrer">
+                        Ver ubicación en el mapa <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+                <img class="planifica-mapa" src="img/desktop/mapa.png" alt="Mapa de ubicación de Cerro Colorado">
+
+                <div class="planifica-transporte">
+                    <article class="planifica-transporte-item">
+                        <img src="img/desktop/auto.png" alt="">
+                        <div>
+                            <h3>En auto</h3>
+                            <p>Desde Córdoba por RP 28.</p>
+                        </div>
+                    </article>
+
+                    <article class="planifica-transporte-item">
+                        <img src="img/desktop/micro.png" alt="">
+                        <div>
+                            <h3>En transporte</h3>
+                            <p>Consultá opciones desde Córdoba y localidades cercanas.</p>
+                        </div>
+                    </article>
+
+                    <article class="planifica-transporte-item">
+                        <img src="img/desktop/ubicacion.png" alt="">
+                        <div>
+                            <h3>Ubicación</h3>
+                            <p>Intersección de Río Seco, Tulumba y Sobremonte.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="planifica-alojamientos" id="alojamientos">
+            <div class="planifica-contenedor">
+                <h2>Dónde alojarse</h2>
+                <p class="planifica-introduccion planifica-alojamientos-texto">
+                    En la zona podés encontrar diferentes opciones de alojamiento.
+                </p>
+
+                <div class="planifica-alojamientos-grid">
+                    <a class="planifica-alojamiento"
+                        href="https://www.booking.com/hotel/ar/el-palomar-casa-de-campo.es.html" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="img/desktop/cabañas.jpg" alt="Cabañas en Cerro Colorado">
+                        <div class="planifica-alojamiento-info">
+                            <h3>Cabañas</h3>
+                            <span aria-hidden="true">→</span>
+                        </div>
+                    </a>
+
+                    <a class="planifica-alojamiento"
+                        href="https://www.google.com/maps/place/Camping+los+mistoles/@-30.0962306,-63.9279949,17z/data=!3m1!4b1!4m6!3m5!1s0x943193d298e551d3:0x3f7e94245b83ab0b!8m2!3d-30.0962306!4d-63.9279949!16s%2Fg%2F11gh35wk0t?hl=es&entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank" rel="noopener noreferrer">
+                        <img src="img/desktop/camping.jpg" alt="Camping en Cerro Colorado">
+                        <div class="planifica-alojamiento-info">
+                            <h3>Camping</h3>
+                            <span aria-hidden="true">→</span>
+                        </div>
+                    </a>
+
+                    <a class="planifica-alojamiento"
+                        href="https://www.google.com/travel/search?q=hoteles%20en%20cerro%20colorado%20c%C3%B3rdoba"
+                        target="_blank" rel="noopener noreferrer">
+                        <img src="img/desktop/hoteles.jpg" alt="Hoteles en Cerro Colorado">
+                        <div class="planifica-alojamiento-info">
+                            <h3>Hoteles</h3>
+                            <span aria-hidden="true">→</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="planifica-contacto-cta">
+                    <h2>¿Tenés consultas o querés más información?</h2>
+                    <a href="contacto.html" class="planifica-boton-contacto">Contactanos</a>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer>
         <div class="logo-redes">
