@@ -867,6 +867,10 @@ h5 {
     align-items: center;
 }
 
+.planifica-isotipo-mobile {
+    display: none;
+}
+
 /* CONTENEDOR GENERAL */
 
 .planifica-contenedor {
@@ -903,7 +907,7 @@ h5 {
 .planifica-actividades {
     position: relative;
     padding: 20px 0 100px;
-    
+
 }
 
 .planifica-actividades::before {
@@ -1181,90 +1185,191 @@ h5 {
     }
 }
 
-@media (max-width: 600px) {
-    .planifica-contenedor {
-        width: 88%;
+/* PLANIFICA TU VISITA — MOBILE */
+@media (max-width: 500px) {
+    .planifica-isotipo-mobile {
+        display: block;
+        width: 110px;
+        height: auto;
+        margin-bottom: 24px;
     }
 
-    .planifica-actividades,
-    .planifica-alojamientos {
-        padding-top: 60px;
-        padding-bottom: 65px;
+    /* Estructura general */
+    body.pagina-planifica {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin: 0;
+        overflow-x: clip;
+    }
+
+    .pagina-planifica main,
+    .pagina-planifica main>section {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        max-width: none;
+        box-sizing: border-box;
+    }
+
+    .planifica-contenedor {
+        width: calc(100% - 40px);
+        max-width: none;
+        margin: 0 auto;
+    }
+
+    /* Banner */
+    #planifica {
+        height: 660px;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 24px;
+        text-align: center;
+        background-position: center;
+        box-sizing: border-box;
+    }
+
+    #planifica .tipoH1 {
+        font-size: 2.2rem;
+        line-height: 1.1;
+    }
+
+    #planifica h2:not(.tipoH1) {
+        font-size: 1rem;
+        line-height: 1.3;
+        max-width: 300px;
+    }
+
+    /* Qué podés hacer */
+    .planifica-actividades {
+        padding: 0px 0 70px;
+    }
+
+    .planifica-actividades::before,
+    .planifica-alojamientos::before {
+        display: none;
     }
 
     .planifica-actividades h2,
     .planifica-alojamientos h2,
     .planifica-llegar h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        line-height: 1.15;
+    }
+
+    .planifica-introduccion {
+        width: 100%;
+        max-width: none;
+        font-size: 1rem;
+        line-height: 1.4;
     }
 
     .planifica-actividades-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 12px;
         margin-top: 30px;
     }
 
     .planifica-actividad {
-        aspect-ratio: 1.15;
+        aspect-ratio: 1.25;
         border-radius: 12px;
     }
 
     .planifica-actividad h3 {
-        font-size: 1.1rem;
-        bottom: 10px;
-        left: 10px;
+        font-size: 1rem;
+        line-height: 1.1;
+        padding: 9px;
+        margin: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 
+    /* Antes de visitar */
     .planifica-aviso {
-        padding: 40px 20px;
+        padding: 45px 20px;
     }
 
     .planifica-aviso-contenido {
+        max-width: 100%;
         align-items: flex-start;
         gap: 15px;
     }
 
     .planifica-aviso-icono {
-        width: 50px;
-        height: 50px;
-        font-size: 2.5rem;
+        width: 46px;
+        height: 46px;
+        font-size: 2.2rem;
     }
 
     .planifica-aviso h2 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
+    .planifica-aviso p {
+        font-size: 0.95rem;
+    }
+
+    /* Cómo llegar */
     .planifica-llegar {
-        padding: 65px 0 110px;
+        padding: 60px 0 90px;
     }
 
-    .planifica-llegar-grid,
-    .planifica-alojamientos-grid {
-        grid-template-columns: 1fr;
+    .planifica-llegar-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+    }
+
+    .planifica-llegar p {
+        font-size: 1rem;
     }
 
     .planifica-transporte {
         grid-column: auto;
+        gap: 23px;
     }
 
     .planifica-mapa {
+        width: 100%;
+        max-width: 100%;
         aspect-ratio: 1.3;
     }
 
+    .planifica-transporte-item img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Dónde alojarse */
+    .planifica-alojamientos {
+        padding: 65px 0 65px;
+    }
+
     .planifica-alojamientos-grid {
-        gap: 25px;
+        grid-template-columns: minmax(0, 1fr);
+        max-width: none;
+        gap: 28px;
         margin-top: 35px;
     }
 
     .planifica-alojamiento {
-        aspect-ratio: 1.65;
+        width: 100%;
+        max-width: 312px;
+        aspect-ratio: 312 / 234;
+        margin: 0 auto;
     }
 
     .planifica-contacto-cta {
-        margin-top: 50px;
+        margin-top: 55px;
     }
 
     .planifica-contacto-cta h2 {
-        font-size: 1.6rem;
+        font-size: 1.45rem;
+        line-height: 1.2;
     }
 }
 
@@ -1359,9 +1464,11 @@ form {
     align-items: flex-start;
     gap: 27px;
 }
+
 .opcion-unica h2 {
     margin: 0;
 }
+
 .opcion-unica label {
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 400;
@@ -1418,6 +1525,7 @@ form {
     font-size: 1.4rem;
 
 }
+
 label {
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 500;
