@@ -802,8 +802,8 @@ h5 {
 
 .video-container {
     position: relative;
-    width: 900px;     
-    max-width: 100%;   
+    width: 900px;
+    max-width: 100%;
 }
 
 .video-descubri {
@@ -1263,6 +1263,7 @@ h5 {
     align-items: center;
 }
 
+/*seccion conoce*/
 #conoce p,
 h4 {
     color: var(--color-verde);
@@ -1271,9 +1272,9 @@ h4 {
 #conoce {
     color: var(--color-verde);
     display: flex;
-    padding: 0 344px 41px 344px;
+    padding-bottom: 100px;
     gap: 100px;
-
+    justify-content: center;
 }
 
 .recomendacion {
@@ -1290,21 +1291,19 @@ h4 {
 
 .separador {
     width: 2px;
-    height: 350px;
     background-color: var(--color-naranja);
     flex-shrink: 0;
 }
 
+/*seccion formulario*/
 #formulario {
     background-image: url("img/desktop/section_formulario.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
     min-height: 675px;
 
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -1312,7 +1311,6 @@ h4 {
 .h3-formulario {
     color: var(--color-cremita);
 }
-
 
 form {
     display: flex;
@@ -1332,9 +1330,14 @@ form {
     align-items: flex-start;
     gap: 27px;
 }
-.opcion-unica h2 {
-    margin: 0;
+
+#formulario h3 {
+    color: var(--color-cremita);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0px;
 }
+
 .opcion-unica label {
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 400;
@@ -1389,8 +1392,8 @@ form {
     font-weight: 400;
     font-style: normal;
     font-size: 1.4rem;
-
 }
+
 label {
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 500;
@@ -1432,4 +1435,173 @@ label {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/*--- RESPONSIVE 1024px ---*/
+@media (max-width: 1024px) {
+
+    #conoce {
+        padding: 0 60px 41px 60px;
+        gap: 50px;
+    }
+
+    .recomendacion {
+        height: auto;
+    }
+
+    .info {
+        gap: 15px;
+    }
+
+    .separador {
+        height: 400px;
+    }
+
+    /*seccion formulario*/
+    #formulario {
+        min-height: 600px;
+        padding: 50px 60px;
+        box-sizing: border-box;
+    }
+
+    form {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .completar-info {
+            width: 40%;
+        }
+
+        .completar-info input {
+            width: 100%;
+        }
+
+        .opcion-unica {
+            width: 40%;
+            gap: 25px;
+        }
+
+        .mensaje {
+            width: 100%;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .mensaje textarea {
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+    }
+}
+
+
+/*--- RESPONSIVE 800px ---*/
+@media (max-width: 800px) {
+
+    #contacto {
+        min-height: 60vh;
+        background-image: url("img/desktop/baner-contacto-800.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #conoce {
+        display: flex;
+        padding: 0 0 40px 0;
+        gap: 30px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .recomendacion {
+        width: 100%;
+        background-color: var(--color-verde);
+        padding: 30px 40px;
+        margin: 0;
+    }
+
+    #conoce .recomendacion h3,
+    #conoce .recomendacion p {
+        color: var(--color-cremita);
+    }
+
+    .separador {
+        display: none;
+    }
+}
+
+/*--- RESPONSIVE 500px ---*/
+@media (max-width: 500px) {
+
+    #contacto {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url(img/mobile/contactobannermobile.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 666px;
+        width: 100%;
+    }
+
+    #formulario {
+        background-image: none;
+        background-color: var(--color-bordo);
+        padding: 40px 20px;
+        box-sizing: border-box;
+    }
+
+    form .completar-info,
+    form .opcion-unica {
+        width: 380px;
+    }
+
+    #contacto,
+    #conoce,
+    #formulario {
+        h2 {
+            font-size: 0.9375rem;
+            font-style: normal;
+            font-weight: 500;
+            text-align: center;
+            padding: 0px 40px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 700;
+            padding: 0px 65px;
+            text-align: center;
+        }
+
+        .opcion-unica h3 {
+            color: var(--color-cremita);
+            text-align: left;
+            font-weight: 500;
+            padding-left: 0px;
+        }
+
+        h4 {
+            font-size: 1.06rem;
+            margin: 0px;
+        }
+
+
+        p {
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.43rem;
+        }
+
+        .tipoH1{
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
+
+    #conoce img {
+        width: 40px;
+        height: 40px;
+    }
 }
