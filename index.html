@@ -25,7 +25,7 @@
     </header>
     <main>
         <section id="inicio">
-            <img src="img/desktop/iso-animacion.gif">
+            <img src="img/desktop/iso-animacion.gif" class="gif-index">
             <h1>Reserva Cultural y Natural Cerro Colorado</h1>
             <h2>Conocé uno de los sitios arqueológicos más importantes de Córdoba.</h2>
             <a href="#porquevisitar">
@@ -122,64 +122,101 @@
                         excepcional tanto cultural como natural. La UNESCO es la Organización de las Naciones Unidas
                         para la
                         Educación, la Ciencia y la Cultura.</p>
-                    <h4>Criterios para su postulación</h4>
-                    <ul>
-                        <li>Se encuentran y se observan pictografías de los primeros pueblos que se asentaron en la
-                            zona, estos
-                            pueblos en la actualidad ya no existen, pero han dejado su huella y su cultura. (basado en
-                            el
-                            criterio 3)</li>
-                        <li>Se encuentra entre sierras formadas hace miles de años por bloques de arenisca roja y
-                            arroyos que
-                            rodean los cañadones (producidos por lluvia y arroyos). Fue producto de la evolución
-                            terrestre, la
-                            Cordillera de los Andes y su levantamiento provoco que la biodiversidad y clima del lugar
-                            sean
-                            transformados. (Basado en el criterio 8)</li>
-                        <li>Proceso de cambio de hábitat de diferentes especies de fauna y flora, que se han adaptados a
-                            estos
-                            cambios. (Basado en el criterio 9)</li>
-                        <li>Especies como el zorro gris,aves rapaces y flora únicas,(el Mato) necesitan de la
-                            concervación para
-                            que puedan seguir habitando y no desaparezcan (Criterio 10)</li>
-                    </ul>
+                    <details class="desplegable-patrimonio">
+                        <summary class="h4-patrimonio">Criterios para su postulación</summary>
+                        <ul>
+                            <li>Se encuentran y se observan pictografías de los primeros pueblos que se asentaron en la
+                                zona, estos
+                                pueblos en la actualidad ya no existen, pero han dejado su huella y su cultura. (basado
+                                en
+                                el
+                                criterio 3)</li>
+                            <li>Se encuentra entre sierras formadas hace miles de años por bloques de arenisca roja y
+                                arroyos que
+                                rodean los cañadones (producidos por lluvia y arroyos). Fue producto de la evolución
+                                terrestre, la
+                                Cordillera de los Andes y su levantamiento provoco que la biodiversidad y clima del
+                                lugar
+                                sean
+                                transformados. (Basado en el criterio 8)</li>
+                            <li>Proceso de cambio de hábitat de diferentes especies de fauna y flora, que se han
+                                adaptados a
+                                estos
+                                cambios. (Basado en el criterio 9)</li>
+                            <li>Especies como el zorro gris,aves rapaces y flora únicas,(el Mato) necesitan de la
+                                concervación para
+                                que puedan seguir habitando y no desaparezcan (Criterio 10)</li>
+                        </ul>
+                    </details>
                 </div>
             </div>
         </section>
         <section id="descubri-historia">
-            <div class="carrusel-track">
-                <div class="zorro">
-                    <img src="/img/desktop/zorrogris.jpg" alt="zorrogris">
-                    <div class="contenedor-naranja">
-                        <h6>Naturaleza y biodiversidad</h6>
-                        <h5>Conozcamos la fauna</h5>
-                        <p>Sus quebradas, laderas, llanos y cerros conforman distintos ambientes donde conviven aves,
-                            mamíferos, reptiles e insectos.</p>
+            <h3 class="h3-descubri-index">Descubrí la historia</h3>
+
+            <!-- Contenedor general para las flechas y el carrusel -->
+            <div class="carrusel-contenedor-general">
+                <!-- Botón Anterior -->
+                <button class="carrusel-btn prev" aria-label="Anterior">&#10094;</button>
+
+                <!-- Carrusel -->
+                <div class="carrusel">
+                    <div class="zorro">
+                        <!-- imagen para computadora -->
+                        <img src="img/desktop/fauna-desktop.png" alt="fauna" class="img-desktop" width="892px"
+                            height="549px">
+                        <!-- imagen para mobile -->
+                        <img src="img/mobile/fauna-mobile.png" alt="fauna-mobile" class="img-mobile" width="264px"
+                            height="382px">
+                        <div class="contenedor-naranja">
+                            <h6>Naturaleza y biodiversidad</h6>
+                            <h5>Conozcamos la fauna</h5>
+                            <p>Sus quebradas, laderas, llanos y cerros conforman distintos ambientes donde conviven
+                                aves, mamíferos, reptiles e insectos.</p>
+                        </div>
+                    </div>
+
+                    <div class="flora">
+                        <!-- imagen para computadora -->
+                        <img src="img/desktop/flora-desktop.png" alt="flora" class="img-desktop" width="892px"
+                            height="549px">
+                        <!-- imagen para mobile -->
+                        <img src="img/mobile/flora-mobile.png" alt="fauna-mobile" class="img-mobile" width="264px"
+                            height="382px">
+                        <div class="contenedor-naranja">
+                            <h6>Naturaleza y biodiversidad</h6>
+                            <h5>Conozcamos la flora</h5>
+                            <p>El bosque serrano reúne especies como algarrobos, talas, chaañares, mistoles y cardones.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="arte">
+                        <!-- imagen para computadora -->
+                        <img src="img/desktop/arte-desktop.png" alt="arterupestre" class="img-desktop" width="892px"
+                            height="549px">
+                        <!-- imagen para mobile -->
+                        <img src="img/mobile/arte-mobile.png" alt="fauna-mobile" class="img-mobile" width="264px"
+                            height="382px">
+                        <div class="contenedor-naranja">
+                            <h6>Patrimonio Arqueológico</h6>
+                            <h5>Conozcamos el arte rupestre</h5>
+                            <p>Las pictografías son huellas de los pueblos originarios que habitaron la región y forman
+                                parte de su patrimonio cultural.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="flora">
-                    <img src="/img/desktop/flora.jpg" alt="flora">
-                    <div class="contenedor-naranja">
-                        <h6>Naturaleza y biodiversidad</h6>
-                        <h5>Conozcamos la flora</h5>
-                        <p>El bosque serrano reúne especies como algarrobos, talas, chañares, mistoles y cardones.</p>
-                    </div>
-                </div>
-                <div class="arte">
-                    <img src="/img/desktop/arteruprestre.jpg" alt="arterupestre">
-                    <div class="contenedor-naranja">
-                        <h6>Patrimonio Arqueológico</h6>
-                        <h5>Conozcamos el arte rupestre</h5>
-                        <p>Las pictografías son huellas de los pueblos originarios que habitaron la región y forman
-                            parte de su patrimonio cultural.</p>
-                    </div>
-                </div>
+
+                <!-- Botón Siguiente -->
+                <button class="carrusel-btn next" aria-label="Siguiente">&#10095;</button>
             </div>
         </section>
     </main>
     <footer>
         <div class="logo-redes">
-            <img src="img/desktop/logo-footer.png" alt="Logo de Cerro Colorado" width="336px" height="102px" />
+            <div class="logo">
+                <img src="img/desktop/logo-footer.png" alt="Logo de Cerro Colorado" width="336px" height="102px" />
+            </div>
             <div class="redes">
                 <img src="img/desktop/facebook.png" alt="Facebook" />
                 <img src="img/desktop/ig.png" alt="Instagram" />
@@ -210,6 +247,72 @@
             <img src="img/desktop/cordoba-logo.png" alt="Cordoba" />
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const carrusel = document.querySelector('.carrusel');
+            const tarjetas = document.querySelectorAll('.carrusel > div');
+            const btnPrev = document.querySelector('.carrusel-btn.prev');
+            const btnNext = document.querySelector('.carrusel-btn.next');
+
+            let currentIndex = 0;
+            const totalTarjetas = tarjetas.length;
+
+            function actualizarCarrusel(index) {
+                // Scroll circular infinito
+                if (index >= totalTarjetas) {
+                    currentIndex = 0;
+                } else if (index < 0) {
+                    currentIndex = totalTarjetas - 1;
+                } else {
+                    currentIndex = index;
+                }
+
+                // Calculamos el ancho real de la tarjeta + su gap actual de forma automática
+                const anchoTarjeta = tarjetas[0].offsetWidth;
+                const gap = parseInt(window.getComputedStyle(carrusel).gap) || 0;
+                const desplazamientoTotal = anchoTarjeta + gap;
+
+                // Desplazamiento exacto hacia la tarjeta seleccionada
+                carrusel.scrollTo({
+                    left: currentIndex * desplazamientoTotal,
+                    behavior: 'smooth'
+                });
+            }
+
+            if (btnNext && btnPrev) {
+                btnNext.addEventListener('click', () => {
+                    actualizarCarrusel(currentIndex + 1);
+                });
+
+                btnPrev.addEventListener('click', () => {
+                    actualizarCarrusel(currentIndex - 1);
+                });
+            }
+
+            // Observer para sincronizar si el usuario desliza con el dedo manualmente en mobile
+            const observerOptions = {
+                root: carrusel,
+                threshold: 0.6
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        tarjetas.forEach((t, i) => {
+                            if (t === entry.target) {
+                                currentIndex = i;
+                                t.classList.add('active');
+                            } else {
+                                t.classList.remove('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            tarjetas.forEach(tarjeta => observer.observe(tarjeta));
+        });
+    </script>
 </body>
 
 </html>
