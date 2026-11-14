@@ -27,7 +27,7 @@ body {
     }
 }
 
-/*---ESTILO DE TEXTO---*/
+/*---ESTILOS DE TEXTO---*/
 
 h1 {
     font-family: "Alegreya Sans", sans-serif;
@@ -87,7 +87,7 @@ p {
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 li {
@@ -120,11 +120,15 @@ header {
     justify-content: center;
     align-items: center;
     justify-content: space-around;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+
+    input {
+        display: none;
+    }
 }
 
+.menu-btn {
+    display: none;
+}
 
 nav {
     display: flex;
@@ -152,10 +156,6 @@ nav a:hover {
     color: var(--color-cremita);
     border-radius: 30px;
     border: 10px solid var(--color-naranja);
-}
-
-input {
-    display: none;
 }
 
 /*---FIN DE HEADER*/
@@ -211,21 +211,19 @@ footer {
     justify-content: center;
 }
 
-
 /*---FIN DE FOOTER---*/
 
-/*---INDEX---*/
 
+
+/*---INDEX---*/
 
 #inicio {
     width: 100%;
     min-height: 100vh;
-
     background-image: url("img/desktop/cerro-index.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -259,12 +257,20 @@ footer {
     margin-bottom: 80px;
 }
 
-#porquevisitar h3,
-h4 {
-    display: flex;
-    justify-content: center;
-    margin: 5px 0px 10px;
-    color: var(--color-verde)
+#porquevisitar {
+
+    h3,
+    h4 {
+        display: flex;
+        justify-content: center;
+        margin: 5px 0px 10px;
+        color: var(--color-verde)
+    }
+
+    p {
+        text-align: center;
+        color: var(--color-verde);
+    }
 }
 
 .tarjetas {
@@ -431,25 +437,31 @@ h4 {
     max-width: 732px;
 }
 
-.texto-patrimonio h3,
-p {
-    color: var(--color-cremita);
-    margin: 10px 0px 5px 0px;
+.texto-patrimonio {
+
+    h3,
+    p {
+        color: var(--color-cremita);
+        margin: 10px 0px 30px 0px;
+    }
 }
 
 .h4-patrimonio {
     color: var(--color-cremita)
 }
 
-.texto-patrimonio ul,
-li {
-    color: var(--color-cremita);
-    font-size: 1.1rem;
-    font-family: "Alegreya Sans", sans-serif;
-    font-weight: 400;
-    line-height: 1.8rem;
-    margin: 0px;
-    padding: 0px;
+.texto-patrimonio {
+
+    ul,
+    li {
+        color: var(--color-cremita);
+        font-size: 1.1rem;
+        font-family: "Alegreya Sans", sans-serif;
+        font-weight: 400;
+        line-height: 1.8rem;
+        margin: 0px;
+        padding: 10px 0px 0px;
+    }
 }
 
 .texto-patrimonio img {
@@ -511,6 +523,7 @@ h5 {
 }
 
 /*tarjetas*/
+
 .carrusel>div {
     position: relative;
     flex: 0 0 892px;
@@ -546,13 +559,18 @@ h5 {
     padding: 5px 25px;
 }
 
-.contenedor-naranja h6,
-h5,
-p {
-    margin: 10px 0px;
+.contenedor-naranja {
+
+    h6,
+    h5,
+    p {
+        margin: 10px 0px;
+        color: var(--color-cremita);
+    }
 }
 
 /*flechas*/
+
 .carrusel-btn {
     position: absolute;
     top: 50%;
@@ -594,22 +612,21 @@ p {
 
 .img-mobile {
     display: none !important;
-    /* Oculta la de celular por defecto en pantallas grandes */
 }
-
 
 /*---INDEX FIN---*/
 
+
+
 /*---DESCUBRI INICIO---*/
+
 #descubri {
     width: 100%;
     min-height: 80vh;
-
     background-image: url("img/desktop/bannerdescubri.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -644,7 +661,6 @@ p {
     width: 100%;
     max-width: 500px;
     gap: 38px;
-
     /*---linea naranja---*/
     padding-bottom: 25px;
     border-bottom: 2px solid var(--color-naranja);
@@ -658,7 +674,6 @@ p {
 #explora-su-historia {
     width: 100%;
     min-height: 145vh;
-
     background-image: url("img/desktop/fondoarterupestre.png");
     background-size: cover;
     background-position: center;
@@ -716,7 +731,6 @@ p {
     flex-direction: column;
     align-items: center;
     gap: 23px;
-
     border-radius: 12px;
     background: var(--color-cremita);
 }
@@ -729,7 +743,6 @@ p {
     flex-direction: column;
     align-items: center;
     gap: 23px;
-
     border-radius: 12px;
     background: var(--color-cremita);
 }
@@ -742,7 +755,6 @@ p {
     flex-direction: column;
     align-items: center;
     gap: 23px;
-
     border-radius: 12px;
     background: var(--color-cremita);
 }
@@ -818,26 +830,22 @@ p {
 
 
 /*---PLANIFICA TU VISITA INICIO*/
-.pagina-planifica>header,
-.pagina-planifica>footer {
-    width: 100%;
-    max-width: none;
-    box-sizing: border-box;
-}
 
 #planifica {
     width: 100%;
-    min-height: 100vh;
-
+    min-height: 80vh;
     background-image: url("img/desktop/planificatuvisitabanner.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    h2 {
+        text-align: center;
+    }
 }
 
 .planifica-isotipo-mobile {
@@ -1007,7 +1015,14 @@ p {
 .planifica-llegar {
     background-color: var(--color-verde);
     color: var(--color-cremita);
-    padding: 130px 0 230px;
+    width: 100%;
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .planifica-llegar-grid {
@@ -1072,7 +1087,6 @@ p {
 /* DÓNDE ALOJARSE */
 
 .planifica-alojamientos {
-    position: relative;
     padding: 90px 0 80px;
 }
 
@@ -1142,226 +1156,19 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
-/* RESPONSIVE */
-
-@media (max-width: 900px) {
-    .planifica-actividades-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .planifica-llegar-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .planifica-transporte {
-        grid-column: 1 / -1;
-    }
-}
-
-/* PLANIFICA TU VISITA — MOBILE */
-@media (max-width: 500px) {
-    .planifica-isotipo-mobile {
-        display: block;
-        width: 110px;
-        height: auto;
-        margin-bottom: 24px;
-    }
-
-    /* Estructura general */
-    body.pagina-planifica {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        margin: 0;
-        overflow-x: clip;
-    }
-
-    .pagina-planifica main,
-    .pagina-planifica main>section {
-        display: block;
-        width: 100%;
-        min-width: 0;
-        max-width: none;
-        box-sizing: border-box;
-    }
-
-    .planifica-contenedor {
-        width: calc(100% - 40px);
-        max-width: none;
-        margin: 0 auto;
-    }
-
-    /* Banner */
-    #planifica {
-        height: 660px;
-        min-height: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 24px;
-        text-align: center;
-        background-position: center;
-        box-sizing: border-box;
-    }
-
-    #planifica .tipoH1 {
-        font-size: 2.2rem;
-        line-height: 1.1;
-    }
-
-    #planifica h2:not(.tipoH1) {
-        font-size: 1rem;
-        line-height: 1.3;
-        max-width: 300px;
-    }
-
-    /* Qué podés hacer */
-    .planifica-actividades {
-        padding: 0px 0 70px;
-    }
-
-    .planifica-actividades::before,
-    .planifica-alojamientos::before {
-        display: none;
-    }
-
-    .planifica-actividades h2,
-    .planifica-alojamientos h2,
-    .planifica-llegar h2 {
-        font-size: 1.8rem;
-        line-height: 1.15;
-    }
-
-    .planifica-introduccion {
-        width: 100%;
-        max-width: none;
-        font-size: 1rem;
-        line-height: 1.4;
-    }
-
-    .planifica-actividades-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 12px;
-        margin-top: 30px;
-    }
-
-    .planifica-actividad {
-        aspect-ratio: 1.25;
-        border-radius: 12px;
-    }
-
-    .planifica-actividad h3 {
-        font-size: 1rem;
-        line-height: 1.1;
-        padding: 9px;
-        margin: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
-
-    /* Antes de visitar */
-    .planifica-aviso {
-        padding: 45px 20px;
-    }
-
-    .planifica-aviso-contenido {
-        max-width: 100%;
-        align-items: flex-start;
-        gap: 15px;
-    }
-
-    .planifica-aviso-icono {
-        width: 46px;
-        height: 46px;
-        font-size: 2.2rem;
-    }
-
-    .planifica-aviso h2 {
-        font-size: 1.5rem;
-    }
-
-    .planifica-aviso p {
-        font-size: 0.95rem;
-    }
-
-    /* Cómo llegar */
-    .planifica-llegar {
-        padding: 60px 0 90px;
-    }
-
-    .planifica-llegar-grid {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 28px;
-    }
-
-    .planifica-llegar p {
-        font-size: 1rem;
-    }
-
-    .planifica-transporte {
-        grid-column: auto;
-        gap: 23px;
-    }
-
-    .planifica-mapa {
-        width: 100%;
-        max-width: 100%;
-        aspect-ratio: 1.3;
-    }
-
-    .planifica-transporte-item img {
-        width: 30px;
-        height: 30px;
-    }
-
-    /* Dónde alojarse */
-    .planifica-alojamientos {
-        padding: 65px 0 65px;
-    }
-
-    .planifica-alojamientos-grid {
-        grid-template-columns: minmax(0, 1fr);
-        max-width: none;
-        gap: 28px;
-        margin-top: 35px;
-    }
-
-    .planifica-alojamiento {
-        width: 100%;
-        max-width: 312px;
-        aspect-ratio: 312 / 234;
-        margin: 0 auto;
-    }
-
-    .planifica-contacto-cta {
-        margin-top: 55px;
-    }
-
-    .planifica-contacto-cta h2 {
-        font-size: 1.45rem;
-        line-height: 1.2;
-    }
-}
-
 /*---PLANIFICA TU VISITA FIN---*/
 
 
 
 /*---CONTACTO INICIO---*/
-/*---CONTACTO INICIO---*/
 
 #contacto {
     width: 100%;
     min-height: 80vh;
-
     background-image: url("img/desktop/contactobanner.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1406,7 +1213,6 @@ h4 {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 675px;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1442,10 +1248,6 @@ form {
     margin: 0px;
 }
 
-.opcion-unica h2 {
-    margin: 0;
-}
-
 .opcion-unica label {
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 400;
@@ -1464,14 +1266,12 @@ form {
     height: 255px;
     padding: 12px;
     background-color: var(--color-cremita);
-
     border-radius: 26px;
     color: var(--color-verde);
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.4rem;
-
     resize: none;
 }
 
@@ -1480,7 +1280,6 @@ form {
     height: 50px;
     border-radius: 26px;
     background-color: var(--color-cremita);
-
     color: var(--color-verde);
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 400;
@@ -1494,7 +1293,6 @@ form {
     height: 58px;
     border-radius: 26px;
     background-color: var(--color-naranja);
-
     color: var(--color-cremita);
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 400;
@@ -1536,7 +1334,7 @@ label {
 
 .opcion-unica input[type="radio"]:checked::after {
     content: "✓";
-    color: #800020;
+    color: var(--color-bordo);
     font-size: 24px;
     font-weight: bold;
     position: absolute;
@@ -1545,8 +1343,122 @@ label {
     transform: translate(-50%, -50%);
 }
 
-/*--- RESPONSIVE 1024px ---*/
+/*---CONTACTO FIN---*/
+
+
+
+/*-------------------------------------------------------------------------------aca va los media 1024*/
+
 @media (max-width: 1024px) {
+
+    /*---INDEX MEDIA 1024 INICIO---*/
+
+    .tarjetas {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*---INDEX FINAL MEDIA 1024---*/
+
+    /*---DESCUBRI INICIO MEDIA 1024---*/
+
+    #conoce-descubri img {
+        max-width: 510px;
+    }
+
+    #conoce-descubri {
+        margin: 0 auto 70px auto;
+        padding-bottom: 80px;
+    }
+
+    #explora-su-historia {
+        width: 100%;
+        min-height: 132vh;
+    }
+
+    .explora-contenedor {
+        flex-wrap: nowrap;
+        gap: 15px;
+    }
+
+    .pueblos-originarios,
+    .casa-museo,
+    .los-comechingones {
+        width: 31%;
+        height: auto;
+        min-height: 400px;
+        padding: 12px 15px 20px 15px;
+        box-sizing: border-box;
+    }
+
+    .pueblos-originarios img,
+    .casa-museo img,
+    .los-comechingones img {
+        width: 100%;
+        height: 140px;
+    }
+
+    .pueblos-originarios p,
+    .casa-museo p,
+    .los-comechingones p {
+        font-size: 1rem;
+    }
+
+    .video-container {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .video-descubri {
+        width: 100%;
+        height: auto;
+    }
+
+    .custom-controls {
+        padding: 10px 25px;
+        gap: 25px;
+    }
+
+    /*---DESCUBRI FINAL MEDIA 1024---*/
+
+    /*---PLANIFICA TU VISITA INICIO MEDIA 1024---*/
+
+    .planifica-contenedor {
+        width: 90%;
+    }
+
+    .planifica-actividades-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+        margin-top: 55px;
+    }
+
+    .planifica-llegar-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+    .planifica-transporte {
+        grid-column: 1 / -1;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .planifica-transporte-item {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .planifica-alojamientos-grid {
+        gap: 20px;
+        margin-top: 55px;
+    }
+
+    /*---PLANIFICA TU VISITA FINAL MEDIA 1024---*/
+
+    /*---CONTACTO INICIO MEDIA 1024---*/
 
     #conoce {
         padding: 0 60px 41px 60px;
@@ -1600,90 +1512,61 @@ label {
             box-sizing: border-box;
         }
     }
+
+    /*---CONTACTO FINAL MEDIA 1024---*/
+
+    /*---FOOTER INICIO MEDIA 1024---*/
+
+    footer {
+        max-height: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 70px 0px;
+    }
+
+    .redes {
+        width: 162px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center
+    }
+
+    .logo-redes {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        width: 527px;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        max-width: 208px;
+        max-height: 63px;
+    }
+
+    .redes img {
+        max-width: 162px;
+        max-height: 23px;
+    }
+
+    .descubri,
+    .planifica,
+    .contacto {
+        gap: 10px;
+    }
+
+    /*---FOOTER FINAL MEDIA 1024---*/
+
 }
 
+/*--------------------------------------------------------------------------------------aca va los media 800*/
 
-/*--- RESPONSIVE 800px ---*/
 @media (max-width: 800px) {
 
-    #contacto {
-        min-height: 60vh;
-        background-image: url("img/desktop/baner-contacto-800.png");
-        background-size: cover;
-        background-position: center;
-    }
-
-    #conoce {
-        display: flex;
-        padding: 0 0 40px 0;
-        gap: 30px;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .recomendacion {
-        width: 100%;
-        background-color: var(--color-verde);
-        padding: 30px 40px;
-        margin: 0;
-    }
-
-    #conoce .recomendacion h3,
-    #conoce .recomendacion p {
-        color: var(--color-cremita);
-    }
-
-    .separador {
-        display: none;
-    }
-}
-
-/*--- RESPONSIVE 500px ---*/
-@media (max-width: 500px) {
-
-    #contacto {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url(img/mobile/contactobannermobile.jpg);
-        background-size: cover;
-        background-position: center;
-        min-height: 666px;
-        width: 100%;
-    }
-
-    #formulario {
-        background-image: none;
-        background-color: var(--color-bordo);
-        padding: 40px 20px;
-        box-sizing: border-box;
-    }
-
-    form .completar-info,
-    form .opcion-unica {
-        width: 380px;
-    }
-
-    #contacto,
-    #conoce,
-    #formulario {}
-}
-
-/*---CONTACTO FIN---*/
-
-
-
-/*---INDEX MEDIA INICIO---*/
-
-@media (max-width: 1024px) {
-
-    .tarjetas {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    /*---DESCUBRI FINAL MEDIA---*/
-
-    /*---HEADER INICIO MEDIA---*/
+    /*---HEADER INICIO MEDIA 800---*/
 
     header {
         position: relative;
@@ -1692,6 +1575,10 @@ label {
         padding: 30px 30px 18px;
         justify-content: space-between;
         align-items: center;
+
+        input {
+            display: none;
+        }
     }
 
     .logo {
@@ -1820,17 +1707,383 @@ label {
         border-color: transparent;
     }
 
+    /*---HEADER FINAL MEDIA 800---*/
 
-    input {
+    /*---INDEX INICIO MEDIA 800---*/
+
+    #inicio,
+    #porquevisitar {
+
+        h1 {
+            text-align: center;
+            margin: 0px 10px;
+        }
+
+        h4 {
+            text-align: center;
+            padding: 0px 70px;
+        }
+
+        .h4-patrimonio {
+            padding: 0px;
+            text-align: left;
+            font-size: 1.5rem;
+        }
+
+        p {
+            text-align: center;
+            color: var(--color-verde);
+        }
+
+    }
+
+    #patrimonio {
+        color: var(--color-cremita);
+
+        .texto-patrimonio {
+
+            ul,
+            li {
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+        }
+
+        h3 {
+            margin: 0px;
+        }
+
+    }
+
+    .texto-patrimonio {
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 732px;
+        justify-content: center;
+    }
+
+    /*carruseeeeeeeeeeel*/
+
+    #descubri-historia {
+        min-height: 600px;
+    }
+
+    /*tamaños del contenedor naranja*/
+
+    .contenedor-naranja {
+        p {
+            font-size: 0.95rem;
+            font-style: normal;
+            font-weight: 400;
+            color: var(--color-cremita)
+        }
+
+        h6 {
+            font-size: 0.95rem;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        h5 {
+            margin: 5px 0px;
+            font-size: 0.95rem;
+            font-style: normal;
+            font-weight: 700;
+        }
+    }
+
+    /*tamaños del contenedor naranja*/
+
+    .img-desktop {
+        display: none !important;
+    }
+
+    .carrusel-contenedor-general {
+        position: relative !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .carrusel {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        width: 100%;
+        box-sizing: border-box;
+        scrollbar-width: none;
+    }
+
+    .carrusel::-webkit-scrollbar {
         display: none;
     }
 
-    /*---HEADER FINAL MEDIA---*/
+    .carrusel>div {
+        flex: 0 0 360px !important;
+        width: 360px !important;
+        scroll-snap-align: center !important;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+
+    .img-desktop {
+        display: none !important;
+    }
+
+    .img-mobile {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        object-fit: cover !important;
+        object-position: top center;
+    }
+
+    .carrusel-btn {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        font-size: 1.3rem;
+        z-index: 20;
+        background-color: var(--color-verde);
+        color: var(--color-cremita);
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .carrusel-btn.prev {
+        left: 10px;
+    }
+
+    .carrusel-btn.next {
+        right: 10px;
+    }
+
+    /*---INEX FINAL MEDIA 800---*/
+
+    /*---DESCUBRI INICIO MEDIA 800---*/
+
+    .h2-800 {
+        max-width: 486px;
+        text-align: center;
+    }
+
+    #explora-su-historia {
+        background-image: url("img/mobile/arte-ruprestre-mobile-descubri.png");
+        width: 100%;
+        min-height: 210vh;
+    }
+
+    .explora-contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .pueblos-originarios,
+    .casa-museo,
+    .los-comechingones {
+        display: flex;
+        width: 460px;
+        height: 455px;
+        padding: 16px 30px 0px 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        border-radius: 12px;
+        background: var(--color-cremita);
+    }
+
+    .pueblos-originarios img,
+    .casa-museo img,
+    .los-comechingones img {
+        width: 100%;
+        height: 200px;
+    }
+
+    h2.h2-explora {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    p.p-explora-2 {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+
+    .h3-explora {
+        color: var(--color-cremita);
+        margin: 0px;
+    }
+
+    .video-container {
+        width: 100%;
+        max-width: 590px;
+        box-sizing: border-box;
+    }
+
+    .video-descubri {
+        width: 100%;
+        height: auto;
+    }
+
+    .custom-controls {
+        padding: 6px 20px;
+        gap: 15px;
+    }
+
+    .h3-video {
+        margin: 80px 0px 20px 0;
+    }
+
+    /*---DESCUBRI FINAL MEDIA 800---*/
+
+    /*---PLANIFICA TU VISITA INICIO MEDIA 800---*/
+
+    .planifica-contenedor {
+        width: 88%;
+    }
+
+    .planifica-isotipo-mobile {
+        display: block;
+        width: 95px;
+        height: auto;
+        margin-bottom: 18px;
+    }
+
+    .planifica-actividades,
+    .planifica-alojamientos {
+        padding-bottom: 75px;
+    }
+
+    .planifica-actividades h2,
+    .planifica-alojamientos h2,
+    .planifica-llegar h2 {
+        font-size: 2.2rem;
+    }
+
+    .planifica-introduccion {
+        font-size: 1.2rem;
+    }
+
+    .planifica-actividades-grid {
+        gap: 18px;
+        margin-top: 40px;
+    }
+
+    .planifica-actividad h3 {
+        font-size: 1.4rem;
+    }
+
+    .planifica-aviso {
+        padding: 55px 24px;
+    }
+
+    .planifica-aviso-icono {
+        width: 70px;
+        height: 70px;
+        font-size: 3rem;
+    }
+
+    .planifica-llegar {
+        padding: 85px 0 125px;
+    }
+
+    .planifica-llegar-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 32px;
+    }
+
+    .planifica-transporte {
+        grid-column: auto;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .planifica-mapa {
+        width: 100%;
+        max-width: 480px;
+        aspect-ratio: 1.45;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .planifica-alojamientos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 100%;
+    }
+
+    .planifica-contacto-cta {
+        margin-top: 50px;
+    }
+
+    /*---PLANIFICA TU VISITA FINAL MEDIA 800---*/
+
+    /*---CONTACTO INICIO MEDIA 800---*/
+
+    #contacto {
+        min-height: 60vh;
+        background-image: url("img/desktop/baner-contacto-800.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #conoce {
+        display: flex;
+        padding: 0 0 40px 0;
+        gap: 30px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .recomendacion {
+        width: 100%;
+        background-color: var(--color-verde);
+        padding: 30px 40px;
+        margin: 0;
+    }
+
+    #conoce .recomendacion h3 {
+        color: var(--color-cremita);
+        margin: 0px;
+        padding: 30px 0px 10px;
+    }
+
+    #conoce .recomendacion p {
+        color: var(--color-cremita);
+        margin: 0px;
+        padding: 10px 0px 30px;
+    }
+
+    .separador {
+        display: none;
+    }
+
+    /*---CONTACTO FINAL MEDIA 800---*/
+
 }
 
-/*media de 768px------------*/
+/*----------------------------------------------------------------------------------aca va los media 500*/
 
-    /*---HEADER INICIO MEDIA---*/
+@media (max-width: 500px) {
+
+    /*---HEADER INICIO MEDIA 500---*/
 
     header {
         position: relative;
@@ -1839,6 +2092,10 @@ label {
         padding: 30px 30px 18px;
         justify-content: space-between;
         align-items: center;
+
+        input {
+            display: none;
+        }
     }
 
     .logo {
@@ -1967,39 +2224,147 @@ label {
         border-color: transparent;
     }
 
+    /*---HEADER FINAL MEDIA 500---*/
 
-    input {
-        display: none;
+    /*---INDEX INICIO MEDIA 500---*/
+
+    #inicio,
+    #porquevisitar,
+    #descubri-historia {
+        h1 {
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 700;
+            padding: 0px 30px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 500;
+            text-align: center;
+            padding: 0px 80px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 700;
+            padding: 0px 65px;
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 1.06rem;
+            padding: 0px 50px;
+        }
+
+
+        .h4-patrimonio {
+            padding: 0px;
+            text-align: left;
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
     }
 
-    /*---HEADER FINAL MEDIA---*/
-
-    /*---DESCUBRI INICIO MEDIA---*/
-
-    h1 {
-        text-align: center;
-        margin: 0px 10px;
+    #inicio {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/mobile/iniciomobile.jpg);
+        background-size: cover;
+        min-height: 666px;
+        width: 100%;
+        background-position: center;
     }
 
-    h4 {
-        text-align: center;
-        padding: 0px 70px;
+    .gif-index {
+        height: 137px;
+        width: 74px;
+        margin-bottom: 25px;
     }
 
-    .h4-patrimonio {
+    .flecha {
+        height: 100px;
+    }
+
+
+    /*por que visitar parte de las tarjetas*/
+
+    #porquevisitar {
+        margin-top: 70px;
+    }
+
+    .tarjetas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
         padding: 0px;
+    }
+
+    .tarjeta1,
+    .tarjeta2,
+    .tarjeta3,
+    .tarjeta4 {
+        width: 186px;
+        height: 251px;
+        flex-shrink: 0;
+        perspective: 1000px;
+    }
+
+    .frente figcaption {
+        height: 34px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 38px 5px 10px;
+        box-sizing: border-box;
+        font-family: "Alegreya Sans", sans-serif;
+        font-size: 0.96rem;
+        font-weight: 600;
+        text-align: center;
+        color: var(--color-cremita);
+    }
+
+    .dorso figcaption {
+        position: static;
+        width: 100%;
+        height: 136px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 38px 5px 10px;
+        box-sizing: border-box;
+        background: var(--color-bordo);
+        font-family: "Alegreya Sans", sans-serif;
+        font-size: 0.87rem;
+        line-height: 1.06;
         text-align: left;
-        font-size: 1.5rem;
+        color: var(--color-cremita);
     }
 
-    p {
-        font-size: 1rem;
-    }
+    #patrimonio {
+        h3 {
+            text-align: left;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 700;
+            padding: 0px 0px 10px;
+        }
 
-    .texto-patrimonio ul,
-    .texto-patrimonio li {
-        font-size: 1rem;
-        line-height: 1.5rem;
+        p {
+            font-size: 1rem;
+            margin: 0px;
+        }
+
+        ul,
+        li {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
     }
 
     .texto-patrimonio {
@@ -2010,6 +2375,41 @@ label {
         max-width: 732px;
         justify-content: center;
     }
+
+    /*desplegable parate del patrimonio*/
+
+    #patrimonio {
+        background-color: var(--color-verde);
+        height: auto !important;
+        min-height: auto !important;
+        padding: 50px 0px
+    }
+
+    .contenedor-patrimonio img {
+        display: none;
+    }
+
+    .desplegable-patrimonio summary {
+        cursor: pointer;
+        user-select: none;
+        font-family: 'Alegreya Sans';
+        margin: 20px 0px 0px;
+    }
+
+    .desplegable-patrimonio ul {
+        display: block;
+    }
+
+    .texto-patrimonio {
+        height: auto !important;
+        min-height: auto !important;
+    }
+
+    .contenedor-patrimonio {
+        height: auto !important;
+        min-height: auto !important;
+    }
+
 
     /*carruseeeeeeeeeeel*/
 
@@ -2053,17 +2453,18 @@ label {
     }
 
     .carrusel-contenedor-general {
-        position: relative !important;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
+        position: relative;
+        padding: 0 5px;
         box-sizing: border-box;
     }
 
     .carrusel {
         display: flex;
-        gap: 20px;
+        gap: 15px;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
@@ -2072,30 +2473,39 @@ label {
         scrollbar-width: none;
     }
 
+    .carrusel {
+        padding: 0 calc(50% - 135px);
+    }
+
     .carrusel::-webkit-scrollbar {
         display: none;
     }
 
     .carrusel>div {
-        flex: 0 0 360px !important;
-        width: 360px !important;
+        flex: 0 0 270px !important;
+        width: 270px !important;
         scroll-snap-align: center !important;
         box-sizing: border-box;
-        position: relative;
-        overflow: hidden;
-        border-radius: 12px;
-    }
-
-    .img-desktop {
-        display: none !important;
     }
 
     .img-mobile {
         display: block !important;
         width: 100% !important;
         height: auto !important;
+        aspect-ratio: 264 / 382;
         object-fit: cover !important;
         object-position: top center;
+    }
+
+    .carrusel>div {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .carrusel .contenedor-naranja {
+        position: absolute !important;
+        bottom: 5px !important;
+        max-width: none !important;
     }
 
     .carrusel-btn {
@@ -2105,28 +2515,422 @@ label {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        width: 40px;
-        height: 40px;
-        font-size: 1.3rem;
-        z-index: 20;
-        background-color: var(--color-verde);
-        color: var(--color-cremita);
-        border: none;
-        border-radius: 50%;
-        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
+        padding: 0;
     }
 
     .carrusel-btn.prev {
-        left: 10px;
+        left: 5px;
     }
 
     .carrusel-btn.next {
-        right: 10px;
+        right: 5px;
     }
 
-}
+    /*---INDEX FINAL MEDIA 500---*/
 
-@media (max-width: 500px) {
+    /*---DESCUBRI INICIO MEDIA 500---*/
+
+    #descubri {
+        background-image: url("img/mobile/section-descubri.png");
+    }
+
+    .tipoH1 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0px 20px;
+    }
+
+    .h2-800 {
+        font-size: 1.2rem;
+        margin: 20px 20px 0px 20px;
+    }
+
+    #conoce-descubri {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        gap: 54px;
+        align-self: stretch;
+        flex-wrap: wrap;
+        padding: 50px 0 0 0;
+        margin-bottom: 0px;
+    }
+
+    .conoce-izq {
+        display: flex;
+        max-width: 350px;
+        max-height: 285px;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: none;
+        padding-bottom: 0px;
+    }
+
+    .h3-conoce {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #conoce-descubri .img-cerro {
+        content: url("img/mobile/cerromobile.jpg");
+        width: 100vw;
+        max-width: 100vw;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    .h3-explora {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #explora-su-historia {
+        min-height: 160vh;
+    }
+
+    .explora-titulo-subtitulo {
+        gap: 10px;
+        padding: 0px 0 60px 0;
+    }
+
+    .pueblos-originarios,
+    .casa-museo,
+    .los-comechingones {
+        max-width: 340px;
+        height: auto;
+        min-height: unset;
+        padding: 16px 20px 20px 20px;
+    }
+
+    .pueblos-originarios img,
+    .casa-museo img,
+    .los-comechingones img {
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .pueblos-originarios h2,
+    .casa-museo h2,
+    .los-comechingones h2 {
+        font-size: 1.5rem;
+    }
+
+    .pueblos-originarios p,
+    .casa-museo p,
+    .los-comechingones p {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+
+    .h3-video {
+        margin: 80px 0px 20px 0;
+        font-size: 2rem;
+    }
+
+    .video-descubri {
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+    }
+
+    .video-container {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .custom-controls {
+        padding: 10px 30px;
+        gap: 25px;
+        bottom: -25px;
+        border-radius: 10px;
+    }
+
+    .custom-controls .btn-ctrl img {
+        width: 40px;
+        height: auto;
+    }
+
+    /*DESCUBRI FINAL MEDIA 500---*/
+
+    /*---PLANIFICA TU VISITA INICIO MEDIA 500---*/
+
+    /* Estructura general */
+    body.pagina-planifica {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin: 0;
+        overflow-x: clip;
+    }
+
+    .pagina-planifica main,
+    .pagina-planifica main>section {
+        width: 100%;
+        min-width: 0;
+        max-width: none;
+        box-sizing: border-box;
+    }
+
+    .planifica-contenedor {
+        width: calc(100% - 40px);
+        max-width: none;
+        margin: 0 auto;
+    }
+
+    /* Banner mobile */
+    #planifica {
+        height: 660px;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 24px;
+        text-align: center;
+        box-sizing: border-box;
+        background-size: cover;
+        background-position: center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/mobile/planificabannermobile.jpg");
+    }
+
+    .planifica-isotipo-mobile {
+        display: block;
+        width: 110px;
+        height: auto;
+        margin-bottom: 24px;
+    }
+
+    #planifica .tipoH1 {
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+
+    #planifica h2:not(.tipoH1) {
+        font-size: 1rem;
+        line-height: 1.3;
+        max-width: 300px;
+    }
+
+    /* Qué podés hacer */
+    .planifica-actividades {
+        padding: 45px 0 70px;
+    }
+
+    .planifica-actividades::before,
+    .planifica-alojamientos::before {
+        display: none;
+    }
+
+    .planifica-actividades h2,
+    .planifica-alojamientos h2,
+    .planifica-llegar h2 {
+        font-size: 1.8rem;
+        line-height: 1.15;
+    }
+
+    .planifica-introduccion {
+        width: 100%;
+        max-width: none;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .planifica-actividades-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 30px;
+    }
+
+    .planifica-actividad {
+        aspect-ratio: 1.25;
+        border-radius: 12px;
+    }
+
+    .planifica-actividad h3 {
+        font-size: 1rem;
+        line-height: 1.1;
+        padding: 9px;
+        margin: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    /* Antes de visitar */
+    .planifica-aviso {
+        padding: 45px 20px;
+    }
+
+    .planifica-aviso-contenido {
+        max-width: 100%;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .planifica-aviso-icono {
+        width: 46px;
+        height: 46px;
+        font-size: 2.2rem;
+    }
+
+    .planifica-aviso h2 {
+        font-size: 1.5rem;
+    }
+
+    .planifica-aviso p {
+        font-size: 0.95rem;
+    }
+
+    /* Cómo llegar */
+    .planifica-llegar {
+        padding: 60px 0 90px;
+    }
+
+    .planifica-llegar-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+    }
+
+    .planifica-llegar p {
+        font-size: 1rem;
+    }
+
+    .planifica-transporte {
+        grid-column: auto;
+        flex-direction: column;
+        gap: 23px;
+    }
+
+    .planifica-mapa {
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 1.3;
+    }
+
+    .planifica-transporte-item img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Dónde alojarse */
+    .planifica-alojamientos {
+        padding: 65px 0;
+    }
+
+    .planifica-alojamientos-grid {
+        grid-template-columns: minmax(0, 1fr);
+        max-width: none;
+        gap: 28px;
+        margin-top: 35px;
+    }
+
+    .planifica-alojamiento {
+        width: 100%;
+        max-width: 312px;
+        aspect-ratio: 312 / 234;
+        margin: 0 auto;
+    }
+
+    .planifica-contacto-cta {
+        margin-top: 55px;
+    }
+
+    .planifica-contacto-cta h2 {
+        font-size: 1.45rem;
+        line-height: 1.2;
+    }
+
+    /* Evitar recorte del footer */
+    .pagina-planifica>footer {
+        height: auto;
+        min-height: 0;
+    }
+
+    /*---PLANIFICA TU VISITA FINAL MEDIA 500---*/
+
+    /*---CONTACTO INICIO MEDIA 500---*/
+    #contacto {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/mobile/contactobannermobile.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 666px;
+        width: 100%;
+    }
+
+    #formulario {
+        background-image: none;
+        background-color: var(--color-bordo);
+        padding: 40px 20px;
+        box-sizing: border-box;
+    }
+
+    form .completar-info,
+    form .opcion-unica {
+        width: 380px;
+    }
+
+    #contacto,
+    #conoce,
+    #formulario {
+        h2 {
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 500;
+            text-align: center;
+            padding: 0px 40px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .opcion-unica h3 {
+            color: var(--color-cremita);
+            text-align: left;
+            font-weight: 500;
+            padding-left: 0px;
+        }
+
+        h4 {
+            font-size: 1.06rem;
+            margin: 0px;
+        }
+
+        p {
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.43rem;
+        }
+
+        .tipoH1 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        #conoce img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    /*---CONTACTO FINAL MEDIA 500---*/
+
+    /*---FOOTER INICIO MEDIA 500---*/
+
     footer {
         display: flex;
         flex-direction: column;
@@ -2176,5 +2980,25 @@ label {
         max-height: 35px;
     }
 
-    /*---FOOTER FINAL MEDIA---*/
+    /*---FOOTER FINAL MEDIA 500---*/
+}
+
+/* esto es para que en mas de 501px se comporte de la misma manera*/
+@media (min-width: 501px) {
+
+    .desplegable-patrimonio summary {
+        cursor: pointer;
+        user-select: none;
+        font-family: 'Alegreya Sans';
+        padding: 30px 0px 20p
+    }
+
+    .desplegable-patrimonio ul {
+        display: block;
+        /* Vuelve a su comportamiento natural desplegable de HTML */
+    }
+
+    .carrusel {
+        padding: 0 calc(50% - 180px) !important;
+    }
 }
